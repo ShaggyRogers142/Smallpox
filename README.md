@@ -1,0 +1,2 @@
+# Smallpox
+History Final Project
