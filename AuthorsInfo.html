@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> History Project </title>
+		<link rel="stylesheet" href="Styles.css">
+        <script>
+            function buttonChangeIndex(bg) {
+                document.getElementById("indexHome").style.background = bg;
+            }
+            function buttonChangeBibliography(bg) {
+                document.getElementById("BibliographyButton").style.background = bg;
+            }
+            function buttonChangeAuthors(bg) {
+                document.getElementById("AuthorsButton").style.background = bg;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1 id="Title">About the Authors</h1>
+        <nav id="HeaderMenu"> 
+                 <button type="button" id="indexHome"><a href="Index.html" target="_self" onmouseover="buttonChangeIndex('#8F8FBA')" onmouseout="buttonChangeIndex('#B7B7BE')">Home</a></button> 
+                 <button type="button" id="AuthorsButton" onmouseover="buttonChangeAuthors('#8F8FBA')" onmouseout="buttonChangeAuthors('#B7B7BE')"><a href="AuthorsInfo.html" target="_self">Authors</a></button>
+                 <button type="button" id="BibliographyButton" onmouseover="buttonChangeBibliography('#8F8FBA')" onmouseout="buttonChangeBibliography('#B7B7BE')"><a href="Bibliography.html" target="_self">Bibliography</a></button>
+        </nav>
+        <div id="authors">
+            <h1>Caleb Hubbard & Qhrystal Avila</h1>
+        </div>
+        <div id="MainSection">
+            <section id="MainText3">
+                <h2>Purpose of This Arcticle (Thesis)</h2><br>
+                <li>To give background information about the development of the smallpox vaccine</li>
+                <h2 style="text-decoration-line: underline;">Thesis: </h2>
+                <p>In the mid 20th century the United States developed a diplomatic strategy to tackling the international issue of the infectious disease smallpox; through the diplomatic efforts of the United States the U.S. and other nations waged a successful campaign to eradicate the scourge of smallpox in the United States and around the world, laying the stage for future such efforts to tackle future endemic and pandemic diseases.</p>
+            </section>
+        </div>
+        <aside id="authorResources">
+            <h3 style="text-decoration-line: underline;">The Process of Development</h3>
+            <h4>(Links to documents)</h4>
+            <li><a href="ProcessPaper.html" target="_self">Process Paper</a></li>
+            <li><a href="" target="_self">Annotated Bibliography</a></li>
+        </aside>
+    </body>
+    
+</html>

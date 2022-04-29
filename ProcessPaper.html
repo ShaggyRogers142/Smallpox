@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Process Paper </title>
+        <link rel="stylesheet" href="Styles.css">
+        <script>
+            function buttonChangeIndex(bg) {
+                document.getElementById("indexHome").style.background = bg;
+                }
+            function buttonChangeBibliography(bg) {
+                document.getElementById("BibliographyButton").style.background = bg;
+                }
+            function buttonChangeAuthors(bg) {
+                    document.getElementById("AuthorsButton").style.background = bg;
+                }
+        </script>        
+    </head>  
+    <body>
+        <div id="Title"> 
+			<h1>Process Paper</h1>
+		</div>
+        <div id="HeaderMenu"> 
+            <article>
+                <header>
+                     <button type="button" id="indexHome"><a href="Index.html" target="_self" onmouseover="buttonChangeIndex('#8F8FBA')" onmouseout="buttonChangeIndex('#B7B7BE')">Home</a></button> 
+                     <button type="button" id="AuthorsButton" onmouseover="buttonChangeAuthors('#8F8FBA')" onmouseout="buttonChangeAuthors('#B7B7BE')"><a href="AuthorsInfo.html" target="_self">Authors</a></button>
+                     <button type="button" id="BibliographyButton" onmouseover="buttonChangeBibliography('#8F8FBA')" onmouseout="buttonChangeBibliography('#B7B7BE')"><a href="Bibliography.html" target="_self">Bibliography</a></button>
+                </header>
+            </article>
+        </div>
+        <div id="processPaperIframe">
+            <iframe src="resources/History%20Project%20Process%20Paper.pdf" height="720px" width="1020px" id="ProcessPaperDoc"></iframe>
+        </div>
+    </body>
+</html>

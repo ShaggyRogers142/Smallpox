@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Facts</title>
+        <link rel="stylesheet" href="Styles.css">
+        <script>
+            function buttonChangeIndex(bg) {
+                document.getElementById("indexHome").style.background = bg;
+                }
+            function buttonChangeBibliography(bg) {
+                document.getElementById("BibliographyButton").style.background = bg;
+                }
+            function buttonChangeAuthors(bg) {
+                    document.getElementById("AuthorsButton").style.background = bg;
+                }
+        </script>
+    </head>
+    <body onload="RandomFact()">
+        <div id="Title"> 
+			<h1>Random Fact!</h1>
+		</div>
+        <div id="HeaderMenu"> 
+            <article>
+                <header>
+                     <button type="button" id="indexHome"><a href="Index.html" target="_self" onmouseover="buttonChangeIndex('#8F8FBA')" onmouseout="buttonChangeIndex('#B7B7BE')">Home</a></button> 
+                     <button type="button" id="AuthorsButton" onmouseover="buttonChangeAuthors('#8F8FBA')" onmouseout="buttonChangeAuthors('#B7B7BE')"><a href="AuthorsInfo.html" target="_self">Authors</a></button>
+                     <button type="button" id="BibliographyButton" onmouseover="buttonChangeBibliography('#8F8FBA')" onmouseout="buttonChangeBibliography('#B7B7BE')"><a href="Bibliography.html" target="_self">Bibliography</a></button>
+                </header>
+            </article>     
+        </div>
+        <div id="FactList">
+                <p id="fact1"></p>
+                <p id="fact2"></p>
+                <p id="fact3"></p>
+                <p id="fact4"></p>
+                <p id="fact5"></p>
+                <p id="fact6"></p>
+                <p id="fact7"></p>
+                <p id="fact8"></p>
+                <p id="fact9"></p>
+                <p id="fact10"></p>
+            
+        </div>
+        <div id="ImgAnimation">
+        </div>
+        <div id="RandomFactJS">
+           <script>
+                let f1 = "fact1...";
+                let f2 = "fact2...";
+                let f3 = "fact3...";
+                let f4 = "fact4...";
+                let f5 = "fact5...";
+                
+                function RandomFact(){
+                    let x = Math.floor((Math.random() * 5) + 1);
+
+                    if (x == 5){
+                        document.getElementById("fact5").innerHTML = f5;
+                    }
+                    if (x == 4){
+                        document.getElementById("fact4").innerHTML = f4;
+                    }
+                    if (x == 3){
+                        document.getElementById("fact3").innerHTML = f3;
+                    }
+                    if (x == 2){
+                        document.getElementById("fact2").innerHTML = f2;
+                    }
+                    if (x == 1){
+                        document.getElementById("fact1").innerHTML = f1;
+                    }
+                }
+            </script>
+        </div>
+    </body>        
+</html>

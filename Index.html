@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en-us" xmlns="http://www.w3.org/1999/html">
+	<head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title> History Project </title>
+		<link href="Styles.css" rel="stylesheet">
+        <script>function buttonChangeIndex(bg) {
+            document.getElementById("indexHome").style.background = bg;
+        }
+        function buttonChangeBibliography(bg) {
+            document.getElementById("BibliographyButton").style.background = bg;
+        }
+        function buttonChangeAuthors(bg) {
+            document.getElementById("AuthorsButton").style.background = bg;
+        }
+        function buttonChangeRanFact(bg) {
+            document.getElementById("getRandomFact").style.background = bg;
+        }
+        function bgChange(bg) {
+            document.getElementById("Img1ReferenceLink").style.border = bg;
+        }
+        function bgChange2(bg) {
+            document.getElementById("Img2ReferenceLink").style.border = bg;
+        }
+        </script>
+        <noscript>Browser does not allow JavaScript functions!</noscript>
+	</head>
+        <h1 id="Title">U.S. Involvement in the Eradication of Smallpox</h1>
+        <nav id="HeaderMenu">
+            <button type="button" id="indexHome" onmouseover="buttonChangeIndex('#8F8FBA')"
+                    onmouseout="buttonChangeIndex('#B7B7BE')" ><a href="Index.html" target="_self">Home</a></button>
+            <button type="button" id="AuthorsButton" onmouseover="buttonChangeAuthors('#8F8FBA')"
+                    onmouseout="buttonChangeAuthors('#B7B7BE')"><a href="AuthorsInfo.html" target="_self">Authors</a>
+            </button>
+            <button type="button" id="BibliographyButton" onmouseover="buttonChangeBibliography('#8F8FBA')"
+                    onmouseout="buttonChangeBibliography('#B7B7BE')"><a href="Bibliography.html" target="_self">Bibliography</a>
+            </button>
+        </nav>
+    <div id="MainSection">
+        <section id="MainText">
+            <h2>What is Smallpox?</h2>
+            <p>Smallpox is an infectious disease that causes great pain and oftentimes is lethal. Smallpox first appeared around 10,000 BC. Creating small blisters that were filled with pus that often came with a fever. Those who fell ill rarely recovered and those that did were left with permanent scars. It came to America in 1775 and was not eradicated until 1980.</p>
+            <h2>Background of The Time Period</h2>
+            <p>During 1949 in America there were several things that were happening. Majorly was the election of Harry S. Truman, the olympia earthquake, NATO defense alliance being created, and scientific advancements including NASA. Along with wars and violence in other countries the US chose to stay away from physically fighting, and they began to meet and call truces with other countries to bring violence to an end.
+</p>
+            <h2>Global Diplomatic Actions toward Eradication</h2>
+            <p>This disease was a major issue globally, due to this it was a world effort to eradicate smallpox. World leaders at the time began to ponder ways to get rid of the disease, so they decided to try mass vaccination. This would later fail in the undeveloped countries causing this effort to come to an end in the end getting an 80% vaccination coverage in all countries. They then tried ring vaccination as an effort, this is where people would be vaccinated that had a person that they were close to be infected with Smallpox. The ring vaccination was very effective and almost fully eradicated smallpox in certain countries. With both efforts' smallpox was announced as eradicated in 1980.</p>
+            <h2>Cases of Smallpox Outbreaks in the U.S.</h2>
+            <p>Although the first appearance of smallpox was in China in the 4th century CE it did not reach the U.S. until the 16th century. With the expanding trade routes smallpox was introduced to central and South America in the 16th century only spreading to North America in the 17th century.  After efforts to eradicate the disease the last known outbreak was in the 19th century with the last case in the US being in 2013.</p>
+            <br>
+        </section>
+        <aside id="Images">
+            <div id="SmallpoxInMilitary">
+                    <iframe src="resources/SmallpoxInMilitary.jpg" height="282px" width="225px" id="MilitaryIframe"></iframe>
+                    <p id="Image1Description">Picture of page 364 in the Red, White, and Blue Manual, where it references protocol for Smallpox.<br><small id="ImageReference">Taken from The Library of Congress website<br><a id="Img1ReferenceLink" href="Bibliography.html" target="_self" onmouseover="bgChange('3px solid black')" onmouseout="bgChange('3px solid transparent')" style="border: solid transparent">*Link in Bibliography*</a></small></p>
+            </div>
+            <div id="VaccineImg">
+                <img src="resources/Vaccine.jpg" id="SmallpoxVaccine" alt="Smallpox_Vaccine" height="145" width="225">
+                <p id="Image2Description">Image of the Smallpox Vaccine<br><small id="Image2Reference">Taken from USA Today Website.<br><a id="Img2ReferenceLink" href="Bibliography.html" target="_self" onmouseover="bgChange2('3px solid black')" onmouseout="bgChange2('3px solid transparent')" style="border: solid transparent">*Link in Bibliography*</a></small></p>
+            </div>
+        </aside>
+    </div>
+        <div id="RandomFactForm">
+	    <footer>
+                <form action="RandomFactGenerator.html">
+                    <label for="getRandomFact">Press submit to learn a random fact!</label>
+                    <input type="submit" name="getRandomFact" id="getRandomFact" value="Submit" onmouseover="buttonChangeRanFact('#8F8FBA')" onmouseout="buttonChangeRanFact('grey')">
+                </form>
+	    </footer>
+        </div>
+</html>

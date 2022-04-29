@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title> Cited Sources </title>
+        <link rel="stylesheet" href="Styles.css">
+        <script>
+            function buttonChangeIndex(bg) {
+                document.getElementById("indexHome").style.background = bg;
+                }
+            function buttonChangeBibliography(bg) {
+                document.getElementById("BibliographyButton").style.background = bg;
+                }
+            function buttonChangeAuthors(bg) {
+                document.getElementById("AuthorsButton").style.background = bg;
+                }
+            function C1Biblio(bg) {
+                document.getElementById("C1").style.background = bg;
+                }
+            function C2Biblio(bg) {
+                document.getElementById("C2").style.background = bg;
+                }
+            function C3Biblio(bg) {
+                document.getElementById("C3").style.background = bg;
+                }
+            function C4Biblio(bg) {
+                document.getElementById("C4").style.background = bg;
+                }
+            function C5Biblio(bg) {
+                document.getElementById("C5").style.background = bg;
+                }
+            function C6Biblio(bg) {
+                document.getElementById("C6").style.background = bg;
+                }
+        </script>        
+    </head>  
+    <body>
+	    <h1 id="Title">Bibliography</h1>
+            <nav id="HeaderMenu">
+                 <button type="button" id="indexHome"><a href="Index.html" target="_self" onmouseover="buttonChangeIndex('#8F8FBA')" onmouseout="buttonChangeIndex('#B7B7BE')">Home</a></button> 
+                 <button type="button" id="AuthorsButton" onmouseover="buttonChangeAuthors('#8F8FBA')" onmouseout="buttonChangeAuthors('#B7B7BE')"><a href="AuthorsInfo.html" target="_self">Authors</a></button>
+                 <button type="button" id="BibliographyButton" onmouseover="buttonChangeBibliography('#8F8FBA')" onmouseout="buttonChangeBibliography('#B7B7BE')"><a href="Bibliography.html" target="_self">Bibliography</a></button>
+            </nav>
+        <div id="MainSection">
+            <section id="Citations">
+            <h1 id="MainText">Source Links</h1>
+            <ol id="CitationList">
+                <li id="C1" class="CITATION" onmouseover="C1Biblio('#8F8FBA')" onmouseout="C1Biblio('transparent')"><a href=" https://www.loc.gov/resource/gdclccn.21012236/?sp=346&amp;q=smallpox&amp;r=0.273%2C0.736%2C0.552%2C0.223%2C0" target="_blank">“Image 346 of the Red, White and Blue Manuals ... a Text Book for the Citizens' Military Training Camp." The Library of Congress. Accessed February 25, 2022. https://www.loc.gov/resource/gdclccn.21012236/?sp=346&amp;q=smallpox&amp;r=0.273%2C0.736%2C0.552%2C0.223%2C0.</a></li>
+                <br>
+                <li id="C2" class="CITATION" onmouseover="C2Biblio('#8F8FBA')" onmouseout="C2Biblio('transparent')"><a href="https://www.cdc.gov/smallpox/history/history.html" target="_blank"> “History of Smallpox.” Centers for Disease Control and Prevention. Centers for Disease Control and Prevention, February 20, 2021. https://www.cdc.gov/smallpox/history/history.html. </a></li>
+                <br>
+                <li id="C3" class="CITATION" onmouseover="C3Biblio('#8F8FBA')" onmouseout="C3Biblio('transparent')"><a href="https://www.mountvernon.org/education/primary-sources-2/article/smallpox-inoculation-letter/" target="_blank"> “Smallpox Inoculation Letter.” George Washington's Mount Vernon. Accessed April 21, 2022. https://www.mountvernon.org/education/primary-sources-2/article/smallpox-inoculation-letter/.</a></li>
+                <br>
+                <li id="C4" class="CITATION" onmouseover="C4Biblio('#8F8FBA')" onmouseout="C4Biblio('transparent')"><a href="https://www.historic-newspapers.com/blog/1949-timeline/#:~:text=Significant%20events%20in%201949%20include,in%20the%20form%20of%20NATO" target="_blank">Matthews, Written by Tom. “1949 Timeline: Historic Newspapers Us.” Historic Newspapers, December 4, 2020. https://www.historic-newspapers.com/blog/1949-timeline/#:~:text=Significant%20events%20in%201949%20include,in%20the%20form%20of%20NATO.</a></li>
+                <br>
+                <li id="C5" class="CITATION" onmouseover="C5Biblio('#8F8FBA')" onmouseout="C5Biblio('transparent')"><a href="https://www.pfizer.com/news/featured_stories/featured_stories_detail/smallpox_vanquished" target="_blank">“Smallpox Vanquished.” Pfizer. Accessed April 21, 2022. https://www.pfizer.com/news/featured_stories/featured_stories_detail/smallpox_vanquished. </a></li>
+                <br>
+                <li id="C6" class="CITATION" onmouseover="C6Biblio('#8F8FBA')" onmouseout="C6Biblio('transparent')"><a href="https://www.usatoday.com/story/news/factcheck/2021/01/12/fact-check-vaccination-helped-eliminate-smallpox/4124284001/" target="_blank">Fauzia, Miriam. “Fact Check: Vaccination Helped Eradicate Smallpox.” USA Today. Gannett Satellite Information Network, March 12, 2021. https://www.usatoday.com/story/news/factcheck/2021/01/12/fact-check-vaccination-helped-eliminate-smallpox/4124284001/. </a></li>
+            </ol>
+                <aside id="authorResources">
+                    <h1>Annotated Bibliography</h1>
+                </aside>
+            </section>
+       </div>
+    </body>
+</html>
